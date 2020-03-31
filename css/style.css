@@ -9,6 +9,12 @@ body {
   line-height: 1.8;
   color: #868e96; }
 
+
+  .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
