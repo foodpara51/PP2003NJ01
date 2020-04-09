@@ -38,29 +38,29 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0" >
-              <li class="nav-item">
-                <a class="nav-link " href="index.html" style="font-size: 20px; font-weight: bolder;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="recipes.html" style="font-size: 20px; font-weight: bolder;">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" style="font-size: 20px; font-weight: bolder;">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="faq.html" style="font-size: 20px; font-weight: bolder;">Faq</a>
-                </li>
-           
-            </ul>
-  
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item cta-btn">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-            
-          </div>
+          <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html" style="font-size: 20px; font-weight: bolder;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="recipes.html" style="font-size: 20px; font-weight: bolder;">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="font-size: 20px; font-weight: bolder;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html" style="font-size: 20px; font-weight: bolder;">Faq</a>
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item cta-btn">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </nav>
   </header>
@@ -87,30 +87,60 @@
   <script>
     $(document).ready(function () {
       $("#btnall").click(function () {
-        
+        removeAll();
+        showAll();
         
       });
       $("#btnkhakra").click(function () {
-        alert("all");
+        removeAll();
+        $(".khakra").show(2000);
       });
 
 
       $("#btndietpuff").click(function () {
-        $(".DP").hide(1000);
-      
+        removeAll();
+        $(".DP").show(2000);
+
       });
       $("#btnnamkeen").click(function () {
-        $("p").show();
+        removeAll();
+        $(".NAMKEEN").show(2000);
       });
 
 
       $("#btnsweettooth").click(function () {
-        $("p").hide();
+        removeAll();
+        $(".ST").show(2000);
       });
       $("#btnnachoos").click(function () {
-        $("p").show();
+        removeAll();
+       
       });
+
+     
+function removeAll()
+{
+  
+  $(".ST").hide(1000);
+  $(".khakra").hide(1000);
+  $(".DP").hide(1000);
+  $(".NAMKEEN").hide(1000);
+}
+
+function showAll()
+{
+  
+  $(".ST").show(1000);
+  $(".khakra").show(1000);
+  $(".DP").show(1000);
+  $(".NAMKEEN").show(1000);
+}
+
+
     });
+
+
+
   </script>
 
 
@@ -124,26 +154,32 @@
         <div class="row" data-aos="fade">
           <div class="col-md-12 text-center heading-wrap">
             <h2>Products</h2>
-            
+
             <h4>our specialty - 101 flavors khakra's</h4>
           </div>
 
         </div>
       </div>
-      <div class="container">
-        <!-- <center>
+      <div class="container"><br>
+        <center>
           <button  class="btn btn-sm btn-primary" id="btnall">All</button>
           <button  class="btn btn-sm btn-primary" id="btnkhakra">Khakra</button>
           <button  class="btn btn-sm btn-primary" id="btndietpuff">Diet Puff</button>
           <button  class="btn btn-sm btn-primary" id="btnnamkeen">Namkeen</button>
           <button  class="btn btn-sm btn-primary" id="btnsweettooth">Sweet Tooth</button>
           <button  class="btn btn-sm btn-primary" id="btnnachoos">Nachoos</button>
-        </center> -->
-      
+        </center>
+
       </div>
     </div>
 
+
+
+    
+   
+
     <div class="container">
+
 
       <div class="row">
         <div class="col-md-4 DP">
@@ -501,12 +537,12 @@
         <div class="col-md-3 mb-5">
           <h3>Quick Links</h3>
           <ul class="list-unstyled footer-link">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="recipes.html">Our Products</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="faq.html">Faq's</a></li>
-            </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Our Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Faq's</a></li>
+          </ul>
         </div>
         <div class="col-md-3">
 
