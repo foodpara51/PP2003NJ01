@@ -93,28 +93,28 @@
       });
       $("#btnkhakra").click(function () {
         removeAll();
-        $(".khakra").show(2000);
+        $(".khakra").show(2500);
       });
 
 
       $("#btndietpuff").click(function () {
         removeAll();
-        $(".DP").show(2000);
+        $(".DP").show(2500);
 
       });
       $("#btnnamkeen").click(function () {
         removeAll();
-        $(".NAMKEEN").show(2000);
+        $(".NAMKEEN").show(2500);
       });
 
 
       $("#btnsweettooth").click(function () {
         removeAll();
-        $(".ST").show(2000);
+        $(".ST").show(2500);
       });
       $("#btnnachoos").click(function () {
         removeAll();
-       
+        $(".nachoos").show(2500);
       });
 
      
@@ -125,6 +125,8 @@ function removeAll()
   $(".khakra").hide(1000);
   $(".DP").hide(1000);
   $(".NAMKEEN").hide(1000);
+  $(".nachoos").hide(1000);
+  $(".others").hide(1000);
 }
 
 function showAll()
@@ -134,9 +136,9 @@ function showAll()
   $(".khakra").show(1000);
   $(".DP").show(1000);
   $(".NAMKEEN").show(1000);
+  $(".nachoos").show(1000);
+  $(".others").show(1000);
 }
-
-
     });
 
 
@@ -168,6 +170,7 @@ function showAll()
           <button  class="btn btn-sm btn-primary" id="btnnamkeen">Namkeen</button>
           <button  class="btn btn-sm btn-primary" id="btnsweettooth">Sweet Tooth</button>
           <button  class="btn btn-sm btn-primary" id="btnnachoos">Nachoos</button>
+          <button  class="btn btn-sm btn-primary" id="btnothers">Others</button>
         </center>
 
       </div>
@@ -299,7 +302,7 @@ function showAll()
 
 
 
-        <div class="col-md-4">
+        <div class="col-md-4 nachoos">
           <figure class="card card-product">
             <div class="img-wrap"><img src="img/triangles.jpg"></div>
             <figcaption class="info-wrap">
@@ -317,7 +320,7 @@ function showAll()
             </div> <!-- bottom-wrap.// -->
           </figure>
         </div> <!-- col // -->
-        <div class="col-md-4">
+        <div class="col-md-4 others">
           <figure class="card card-product">
             <div class="img-wrap"><img src="img/nachni.jpg"> </div>
             <figcaption class="info-wrap">
